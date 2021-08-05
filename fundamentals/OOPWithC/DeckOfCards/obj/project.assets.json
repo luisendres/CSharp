@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luis\\Documents\\CSharp\\DeckOfCards\\DeckOfCards.csproj",
+      "projectUniqueName": "C:\\Users\\Luis\\Documents\\CSharp\\fundamentals\\OOPWithC\\DeckOfCards\\DeckOfCards.csproj",
       "projectName": "DeckOfCards",
-      "projectPath": "C:\\Users\\Luis\\Documents\\CSharp\\DeckOfCards\\DeckOfCards.csproj",
+      "projectPath": "C:\\Users\\Luis\\Documents\\CSharp\\fundamentals\\OOPWithC\\DeckOfCards\\DeckOfCards.csproj",
       "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luis\\Documents\\CSharp\\DeckOfCards\\obj\\",
+      "outputPath": "C:\\Users\\Luis\\Documents\\CSharp\\fundamentals\\OOPWithC\\DeckOfCards\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+rAezWWz8mHajomfjIWw69F213/fitHGBMvupj2i9MEHh0xUuhWpqTy33YIkiLjcBmRl1Z7Gdmwy7f8Ctcf2QQ==",
+  "dgSpecHash": "P0WKAMwObxNrpv4rSYRuzTLcvVJfOliyJWJUNIrE8KIOp48DZ8dmgpaZfeypw73Op5JWGCwOv2Y5S3WsxTYqhg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luis\\Documents\\CSharp\\DeckOfCards\\DeckOfCards.csproj",
+  "projectFilePath": "C:\\Users\\Luis\\Documents\\CSharp\\fundamentals\\OOPWithC\\DeckOfCards\\DeckOfCards.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
