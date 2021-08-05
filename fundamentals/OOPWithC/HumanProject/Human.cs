@@ -15,11 +15,11 @@ namespace HumanProject
             //if the get{} are empty it will default to "this"/following
             get
             {
-                return Health;
+                return health;
             }
             set 
             {
-                Health = value;
+                health = value;
             }
         }
         // Add a constructor that takes a value to set Name, and set the remaining fields to default values
@@ -29,25 +29,28 @@ namespace HumanProject
             Strength = 3;
             Intelligence = 3;
             Dexterity = 3;
-            Health = 100;
+            health = 100;
         }
         
         // Add a constructor to assign custom values to all fields
-        public Human(string name, int strength, int intelligence, int dexterity, int hp)
+        public Human(string name, int str, int intel, int dex, int hp)
         {
             Name = name;
-            Strength = strength;
-            Intelligence = intelligence;
-            Dexterity = dexterity;
+            Strength = str;
+            Intelligence = intel;
+            Dexterity = dex;
             health = hp;
         }
          
         // Build Attack method
         public int Attack(Human target)
         {
-            int damage = 5 * Strength;
-            Health -= damage;
-            return health;
+            // create integer variable to hold the amount of damage the attack will do 
+            int dmg = 5 * Strength;
+            target.health -= dmg;
+            // This next line of code would display who attacked who and for how much damage but can't display inn this form
+            // Console.WriteLine($"{Name} attacked {target.Name} for {dmg} damage!");
+            return target.health;
         }
     }
 }
