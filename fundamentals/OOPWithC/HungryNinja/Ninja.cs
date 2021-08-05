@@ -19,11 +19,8 @@ namespace HungryNinja
         public bool IsFull
         {
             get
-            {   if(calorieIntake > 1200)
-                {
-                    return true;
-                }
-                return false;
+            {   
+                return calorieIntake > 1200;
             }
         }
         // build out the Eat method
