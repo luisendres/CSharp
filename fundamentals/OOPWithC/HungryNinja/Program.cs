@@ -6,7 +6,13 @@ namespace HungryNinja
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Ninja ninja = new Ninja();
+            Buffet buffet = new Buffet();
+
+            while(!ninja.IsFull)
+            {
+                ninja.Eat(buffet.Serve());
+            }
         }
     }
 }
