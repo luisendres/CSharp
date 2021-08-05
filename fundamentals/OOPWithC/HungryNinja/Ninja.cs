@@ -35,7 +35,7 @@ namespace HungryNinja
                 FoodHistory.Add(item);
                 Console.WriteLine($"Ninja ate {item.Name}");
             }
-            else if (IsFull == true)
+            if (IsFull == true)
             {
                 Console.WriteLine("Ninja is too Full to eat!");
             }
