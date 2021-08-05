@@ -29,9 +29,22 @@ namespace DeckOfCards
             }
         }
 
-        // public Card Discard()
-        // {
-        //     return;
-        // }
+        public Card Discard(int index)
+        {
+            Card cardInHand;
+            if(index < Hand.Count)
+            {
+                cardInHand = Hand[index];
+                Hand.RemoveAt(index);
+                Console.WriteLine($"{Name} discarded {cardInHand}");
+                PrintHand();
+                return cardInHand;
+            }
+            else
+            {  
+                Console.WriteLine("Waht");
+                return null;
+            }
+        }
     }
 }

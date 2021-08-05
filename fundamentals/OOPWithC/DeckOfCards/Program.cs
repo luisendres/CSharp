@@ -15,6 +15,8 @@ namespace DeckOfCards
             player.Draw(deck);
             player.Draw(deck);
             player.PrintHand();
+            player.Discard(5);
+            player.Discard(1);
         }
     }
 }
