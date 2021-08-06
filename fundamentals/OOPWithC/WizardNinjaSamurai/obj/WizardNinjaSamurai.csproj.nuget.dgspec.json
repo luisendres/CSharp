@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luis\\Documents\\CSharp\\WizardNinjaSamurai\\WizardNinjaSamurai.csproj": {}
+    "C:\\Users\\Luis\\Documents\\CSharp\\fundamentals\\OOPWithC\\WizardNinjaSamurai\\WizardNinjaSamurai.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luis\\Documents\\CSharp\\WizardNinjaSamurai\\WizardNinjaSamurai.csproj": {
+    "C:\\Users\\Luis\\Documents\\CSharp\\fundamentals\\OOPWithC\\WizardNinjaSamurai\\WizardNinjaSamurai.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luis\\Documents\\CSharp\\WizardNinjaSamurai\\WizardNinjaSamurai.csproj",
+        "projectUniqueName": "C:\\Users\\Luis\\Documents\\CSharp\\fundamentals\\OOPWithC\\WizardNinjaSamurai\\WizardNinjaSamurai.csproj",
         "projectName": "WizardNinjaSamurai",
-        "projectPath": "C:\\Users\\Luis\\Documents\\CSharp\\WizardNinjaSamurai\\WizardNinjaSamurai.csproj",
+        "projectPath": "C:\\Users\\Luis\\Documents\\CSharp\\fundamentals\\OOPWithC\\WizardNinjaSamurai\\WizardNinjaSamurai.csproj",
         "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luis\\Documents\\CSharp\\WizardNinjaSamurai\\obj\\",
+        "outputPath": "C:\\Users\\Luis\\Documents\\CSharp\\fundamentals\\OOPWithC\\WizardNinjaSamurai\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config"
