@@ -30,3 +30,4 @@ C:\Users\Luis\Documents\CSharp\aspCore\DojoSurveyASP\obj\Debug\netcoreapp3.1\Doj
 C:\Users\Luis\Documents\CSharp\aspCore\DojoSurveyASP\obj\Debug\netcoreapp3.1\DojoSurveyASP.Views.pdb
 C:\Users\Luis\Documents\CSharp\aspCore\DojoSurveyASP\obj\Debug\netcoreapp3.1\Razor\Views\DojoSurvey\Index.cshtml.g.cs
 C:\Users\Luis\Documents\CSharp\aspCore\DojoSurveyASP\obj\Debug\netcoreapp3.1\Razor\Views\DojoSurvey\Result.cshtml.g.cs
+C:\Users\Luis\Documents\CSharp\aspCore\DojoSurveyASP\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs

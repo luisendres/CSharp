@@ -1,3 +1,6 @@
+// using System;
+// using System.Collections.Generic;
+using DojoSurveyASP.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DojoSurveyASP.Controllers
@@ -11,14 +14,10 @@ namespace DojoSurveyASP.Controllers
         }
 
         // remember to use [HttpPost] attributes!
-        [HttpPost("method")]
-        public IActionResult Method(string name, string location, string language, string comment)
+        [HttpPost("result")]
+        public IActionResult ResultProcess(User newUser)
         {
-            ViewBag.Name = name;
-            ViewBag.Location = location;
-            ViewBag.Language = language;
-            ViewBag.Comment = comment;
-            return View("Result");
+            return View("Result", newUser);
         }
     }
 }

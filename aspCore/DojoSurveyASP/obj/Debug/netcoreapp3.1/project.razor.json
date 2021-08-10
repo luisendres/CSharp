@@ -14410,6 +14410,11 @@
       "FilePath": "c:\\Users\\Luis\\Documents\\CSharp\\aspCore\\DojoSurveyASP\\Views\\DojoSurvey\\Index.cshtml",
       "TargetPath": "Views\\DojoSurvey\\Index.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Luis\\Documents\\CSharp\\aspCore\\DojoSurveyASP\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
