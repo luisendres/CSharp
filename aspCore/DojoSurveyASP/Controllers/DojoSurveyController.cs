@@ -1,5 +1,3 @@
-// using System;
-// using System.Collections.Generic;
 using DojoSurveyASP.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,10 +12,17 @@ namespace DojoSurveyASP.Controllers
         }
 
         // remember to use [HttpPost] attributes!
-        [HttpPost("result")]
+        [HttpPost("DojoSurvey/result")]
         public IActionResult ResultProcess(User newUser)
         {
-            return View("Result", newUser);
+            if(ModelState.IsValid)
+            {
+                return View("Result", newUser);
+            }
+            else
+            {
+                return View("Index");
+            }
         }
     }
 }

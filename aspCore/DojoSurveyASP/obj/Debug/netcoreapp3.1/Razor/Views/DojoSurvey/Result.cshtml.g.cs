@@ -13,14 +13,14 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Users\Luis\Documents\CSharp\aspCore\DojoSurveyASP\Views\_ViewImports.cshtml"
+#line 2 "C:\Users\Luis\Documents\CSharp\aspCore\DojoSurveyASP\Views\_ViewImports.cshtml"
 using DojoSurveyASP.Models;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b6ef581c7f7368904880942d2d2d678ad344adeb", @"/Views/DojoSurvey/Result.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a8157fff073ad10acc2bb1553ac278d942ff78ed", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2320771c473945105a40e19a22699a18b8decca6", @"/Views/_ViewImports.cshtml")]
     public class Views_DojoSurvey_Result : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<User>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("d-flex justify-content-center"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
