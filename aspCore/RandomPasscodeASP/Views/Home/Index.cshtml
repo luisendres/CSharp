@@ -1,0 +1,11 @@
+﻿@model RandomPasscode
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<p>Random passcode (passcode #@ViewBag.Count)</p>
+<p>@Context.Session.GetString("passcode")</p>
+<form asp-action="result" asp-controller="Home" method="POST">
+    <input type="submit" value="Generate">
+</form>
