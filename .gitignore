@@ -45,3 +45,14 @@ aspCore/ASPIntro/obj/Debug/netcoreapp3.1/ASPIntro.RazorTargetAssemblyInfo.cache
 aspCore/ASPIntro/obj/Debug/netcoreapp3.1/project.razor.json
 aspCore/ASPIntro/obj/Debug/netcoreapp3.1/staticwebassets/ASPIntro.StaticWebAssets.Manifest.cache
 aspCore/ASPIntro/obj/Debug/netcoreapp3.1/staticwebassets/ASPIntro.StaticWebAssets.xml
+aspCore/ASPIntro/Models/RegisterView.cs
+aspCore/ASPIntro/Models/User.cs
+aspCore/ASPIntro/Models/VideoView.cs
+aspCore/ASPIntro/Views/_ViewImports.cshtml
+aspCore/ASPIntro/Views/Home/Guest.cshtml
+aspCore/ASPIntro/Views/Home/Register.cshtml
+aspCore/ASPIntro/Views/Home/Register2.cshtml
+aspCore/ASPIntro/Views/Home/Videos.cshtml
+aspCore/obj/Debug/netcoreapp3.1/ASPIntro.AssemblyInfo.cs
+aspCore/obj/Debug/netcoreapp3.1/ASPIntro.AssemblyInfoInputs.cache
+aspCore/obj/Debug/netcoreapp3.1/ASPIntro.csproj.AssemblyReference.cache
