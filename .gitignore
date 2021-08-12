@@ -317,3 +317,5 @@ ORMs/ForumDemo/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtru
 ORMs/ForumDemo/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js
 ORMs/ForumDemo/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt
 ORMs/CRUDelicious/appsettings.json
+ORMs/ForumDemo/Models/LoginUser.cs
+ORMs/ForumDemo/Models/User.cs
