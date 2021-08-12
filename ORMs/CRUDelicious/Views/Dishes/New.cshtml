@@ -1,0 +1,42 @@
+@model Dish
+
+<div class="w-75 mx-auto">
+    <h4 class="text-center">Add a new Dish!</h4>
+
+    <form class="d-flex d-flex justify-content-between align-items-start mt-5" asp-controller="Dishes" asp-action="Create" method="POST">
+
+        <div>
+            <label asp-for="Chef"></label>
+            <span asp-validation-for="Chef" class="text-danger font-weight-bold"></span>
+            <input asp-for="Chef" class="form-control" />
+
+            <label asp-for="Name"></label>
+            <span asp-validation-for="Name" class="text-danger font-weight-bold"></span>
+            <input asp-for="Name" class="form-control" />
+
+            <label asp-for="Calories"></label>
+            <span asp-validation-for="Calories" class="text-danger font-weight-bold"></span>
+            <input asp-for="Calories" class="form-control" />
+        </div>
+
+        <div>
+            <label asp-for="Tastiness"></label>
+            <select asp-for="Tastiness">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <div>
+            <label asp-for="Description"></label>
+            <span asp-validation-for="Description" class="text-danger font-weight-bold"></span>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <button class="btn btn-sm btn-outline-dark mt-3">Add Dish</button>
+        </div>
+
+    </form>
+    
+</div>
