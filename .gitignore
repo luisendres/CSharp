@@ -330,3 +330,4 @@ ORMs/ForumDemo/obj/Debug/netcoreapp3.1/Razor/Views/Posts/Edit.cshtml.g.cs
 ORMs/ForumDemo/Migrations/20210813215217_First.cs
 ORMs/ForumDemo/Migrations/20210813215217_First.Designer.cs
 ORMs/ForumDemo/Views/Home/Details.cshtml
+ORMs/LogAndReg/appsettings.json
