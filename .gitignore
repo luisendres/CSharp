@@ -319,3 +319,11 @@ ORMs/ForumDemo/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt
 ORMs/CRUDelicious/appsettings.json
 ORMs/ForumDemo/Models/LoginUser.cs
 ORMs/ForumDemo/Models/User.cs
+ORMs/ForumDemo/Migrations/20210813004028_AddUserModel.cs
+ORMs/ForumDemo/Migrations/20210813004028_AddUserModel.Designer.cs
+ORMs/ForumDemo/Views/Home/_Login.cshtml
+ORMs/ForumDemo/Views/Home/_Register.cshtml
+ORMs/ForumDemo/obj/Debug/netcoreapp3.1/Razor/Views/Home/_Login.cshtml.g.cs
+ORMs/ForumDemo/obj/Debug/netcoreapp3.1/Razor/Views/Home/_Register.cshtml.g.cs
+ORMs/ForumDemo/obj/Debug/netcoreapp3.1/Razor/Views/Posts/Details.cshtml.g.cs
+ORMs/ForumDemo/obj/Debug/netcoreapp3.1/Razor/Views/Posts/Edit.cshtml.g.cs
