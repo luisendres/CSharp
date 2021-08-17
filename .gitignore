@@ -334,3 +334,5 @@ ORMs/LogAndReg/appsettings.json
 ORMs/ChefsAndDishes/appsettings.json
 ORMs/ProdAndCat/appsettings.json
 ORMs/WeddingPlanner/appsettings.json
+ORMs/ForumDemo/Models/UserPostLike.cs
+ORMs/ForumDemo/Views/Posts/_NewPost.cshtml
