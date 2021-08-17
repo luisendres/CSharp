@@ -331,3 +331,6 @@ ORMs/ForumDemo/Migrations/20210813215217_First.cs
 ORMs/ForumDemo/Migrations/20210813215217_First.Designer.cs
 ORMs/ForumDemo/Views/Home/Details.cshtml
 ORMs/LogAndReg/appsettings.json
+ORMs/ChefsAndDishes/appsettings.json
+ORMs/ProdAndCat/appsettings.json
+ORMs/WeddingPlanner/appsettings.json
