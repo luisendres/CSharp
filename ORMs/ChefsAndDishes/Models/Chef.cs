@@ -7,7 +7,7 @@ namespace ChefsAndDishes.Models
     public class Chef
     {
         [Key]
-        public int UserId { get; set; }
+        public int ChefId { get; set; }
         
         [Required(ErrorMessage = "is required.")]
         [MinLength(2, ErrorMessage = "must be at least 2 characters")]
@@ -33,6 +33,13 @@ namespace ChefsAndDishes.Models
         public string FullName()
         {
             return FirstName + " " + LastName;
+        }
+
+        public int Age()
+        {
+            DateTime now = DateTime.Today;
+            int age = now.Year - Date.Year;
+            return age;
         }
     }
 }

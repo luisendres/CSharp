@@ -13,13 +13,13 @@ namespace ChefsAndDishes.Models
         [MaxLength(45, ErrorMessage = "Must be less than 45 characters.")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "is required.")]
-        [MinLength(2, ErrorMessage = "Must be more than 2 characters.")]
-        [MaxLength(45, ErrorMessage = "Must be less than 45 characters.")]
-        public string Chef { get; set; }
+        // [Required(ErrorMessage = "is required.")]
+        // [MinLength(2, ErrorMessage = "Must be more than 2 characters.")]
+        // [MaxLength(45, ErrorMessage = "Must be less than 45 characters.")]
+        // // public string Chef { get; set; }
 
-        [Required(ErrorMessage = "is required.")]
-        [Range(0,6, ErrorMessage = "Must be more than 0 or less than 6.")]
+        // // [Required(ErrorMessage = "is required.")]
+        // // [Range(0,6, ErrorMessage = "Must be more than 0 or less than 6.")]
         public int Tastiness { get; set; }
         
         [Required(ErrorMessage = "is required.")]
@@ -38,6 +38,8 @@ namespace ChefsAndDishes.Models
 
         Navigation properties are null unless you use .Include / .ThenInclude
         */
+        [Required]
+        [Display(Name = "Chef")]
         public int ChefId { get; set; } // FK 1 User : Many Post
         // Navigation Property for 1 User : Many Post
         public Chef Author { get; set; }

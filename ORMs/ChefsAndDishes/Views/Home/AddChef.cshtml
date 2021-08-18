@@ -1,0 +1,24 @@
+@model Chef
+
+<div class="w-75 mx-auto">
+    <h4 class="text-center">Add a Chef!</h4>
+
+    <form class="d-flex d-flex justify-content-between align-items-start mt-5" asp-controller="Home" asp-action="CreateChef" method="POST">
+
+        <div>
+            <label asp-for="FirstName"></label>
+            <span asp-validation-for="FirstName" class="text-danger font-weight-bold"></span>
+            <input asp-for="FirstName" class="form-control" />
+
+            <label asp-for="LastName"></label>
+            <span asp-validation-for="LastName" class="text-danger font-weight-bold"></span>
+            <input asp-for="LastName" class="form-control" />
+
+            <label asp-for="Date"></label>
+            <span asp-validation-for="Date" class="text-danger font-weight-bold"></span>
+            <input asp-for="Date" class="form-control" />
+
+            <button class="btn btn-sm btn-outline-dark mt-3">Add Chef</button>
+    </form>
+    
+</div>
