@@ -54,8 +54,12 @@ namespace ProdAndCat.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.CategoriesToAdd = db.Categories.ToList();
-            // ViewBag.CategoriesToAdd = db.Categories.Where(c => c.Associations != c.).ToList();
+            var unrelatedCategories = db.Categories
+                .Include(c => c.Associations)
+                .Where(c => c.Associations.All(a => a.ProductId != productId));
+
+            // ViewBag.CategoriesToAdd = db.Categories.ToList();
+            ViewBag.CategoriesToAdd = unrelatedCategories;
 
             return View("ProductDetails", product);
         }
@@ -104,7 +108,12 @@ namespace ProdAndCat.Controllers
                 return RedirectToAction("Categories");
             }
 
-            ViewBag.ProductsToAdd = db.Products.ToList();
+            var unrelatedProducts = db.Products
+                .Include(c => c.Associations)
+                .Where(c => c.Associations.All(a => a.CategoryId != categoryId));
+
+            // ViewBag.ProductsToAdd = db.Products.ToList();
+            ViewBag.ProductsToAdd = unrelatedProducts;
 
             return View("CategoryDetails", category);
         }
@@ -116,7 +125,7 @@ namespace ProdAndCat.Controllers
             db.Associations.Add(newAssociation);
             db.SaveChanges();
 
-            return RedirectToAction("CategoriesDetails", new { categoryId = categoryId});
+            return RedirectToAction("CategoryDetails", new { categoryId = categoryId});
         }
 // ----------------------------------------------------------------------------------------------------------------------------------------->
         public IActionResult Privacy()
