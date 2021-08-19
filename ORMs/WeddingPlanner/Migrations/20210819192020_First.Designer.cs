@@ -9,7 +9,7 @@ using WeddingPlanner.Models;
 namespace WeddingPlanner.Migrations
 {
     [DbContext(typeof(WeddingPlannerContext))]
-    [Migration("20210819073207_First")]
+    [Migration("20210819192020_First")]
     partial class First
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,7 +37,7 @@ namespace WeddingPlanner.Migrations
 
                     b.HasIndex("WeddingId");
 
-                    b.ToTable("Rsvp");
+                    b.ToTable("Rsvps");
                 });
 
             modelBuilder.Entity("WeddingPlanner.Models.User", b =>
@@ -107,7 +107,7 @@ namespace WeddingPlanner.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Wedding");
+                    b.ToTable("Weddings");
                 });
 
             modelBuilder.Entity("WeddingPlanner.Models.Rsvp", b =>

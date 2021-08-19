@@ -35,7 +35,7 @@ namespace WeddingPlanner.Migrations
 
                     b.HasIndex("WeddingId");
 
-                    b.ToTable("Rsvp");
+                    b.ToTable("Rsvps");
                 });
 
             modelBuilder.Entity("WeddingPlanner.Models.User", b =>
@@ -105,7 +105,7 @@ namespace WeddingPlanner.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Wedding");
+                    b.ToTable("Weddings");
                 });
 
             modelBuilder.Entity("WeddingPlanner.Models.Rsvp", b =>
