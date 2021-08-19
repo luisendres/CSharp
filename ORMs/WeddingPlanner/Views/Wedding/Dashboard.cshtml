@@ -11,14 +11,36 @@
     </tr>
     @foreach (Wedding wedding in Model)
     {
+        bool alreadyResponded = wedding.Rsvps.Any(rsvp => Context.Session.GetInt32("UserId") == rsvp.UserId);
+
         <tr>
-            <th>@wedding.Couple();</th>
-            <th>@wedding.Date</th>
-            <th>@wedding.Rsvps.Count</th>
-            <th>PlaceHolder</th>
+            <td><a asp-controller="Wedding" asp-action="WeddingDetails" asp-route-weddingId="@wedding.WeddingId">@wedding.Couple()</a></td>
+            <td>@wedding.Date.ToString("MMM dd, yyyy")</td>
+            <td>@wedding.Rsvps.Count</td>
+            <td>
+                @if (Context.Session.GetInt32("UserId") == wedding.UserId)
+                {
+                    <form asp-controller="Wedding" asp-action="Delete" asp-route-weddingId="@wedding.WeddingId" method="POST">
+                        <button class="btn btn-link">
+                            <a class="btn btn-sm">Delete</a>
+                        </button>
+                    </form>
+                }
+                <form asp-controller="Wedding" asp-action="Respond" asp-route-weddingId="@wedding.WeddingId">
+                    <button class="btn btn-link">
+                        @if (alreadyResponded && Context.Session.GetInt32("UserId") != wedding.UserId)
+                        {
+                            <a class="btn btn-sm">UN-RSVP</a>
+                        }
+                        else if (!alreadyResponded && Context.Session.GetInt32("UserId") != wedding.UserId)
+                        {
+                            <a class="btn btn-sm">RSVP</a>
+                        }
+                    </button>
+                </form>
+            </td>
         </tr>
     }
-    
 </table>
 
-<button class="btn btn-link">New Wedding</button>
+<a class="btn btn-sm btn-outline-dark" asp-area="" asp-controller="Wedding" asp-action="AddWedding">New Wedding</a>

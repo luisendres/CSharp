@@ -24,8 +24,8 @@ namespace WeddingPlanner.Models
         public DateTime Date { get; set; }
 
         [Required(ErrorMessage = "is required.")]
+        [MinLength(2, ErrorMessage = "must be at least 2 characters.")]
         [Display(Name = "Wedding Address")]
-        
         public string Address { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
@@ -42,7 +42,7 @@ namespace WeddingPlanner.Models
 
         public string Couple()
         {
-            return WedderOne + " " + WedderTwo;
+            return WedderOne + " and " + WedderTwo;
         }
     }
 }

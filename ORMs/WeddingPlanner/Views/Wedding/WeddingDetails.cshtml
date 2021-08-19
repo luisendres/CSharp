@@ -1,2 +1,14 @@
 @model Wedding
 
+<div class="container">
+    <h1 class="text-center">@Model.Couple()'s Wedding</h1>
+
+    <h3 class="text-center">@Model.Date.ToString(" MMM dd, yyyy")</h3>
+
+    <h5 class="text-center">Guests:</h5>
+    
+    @foreach (Rsvp rsvps in Model.Rsvps)
+    {
+        <p class="text-center">@rsvps.User.FullName()</p>
+    }
+</div>

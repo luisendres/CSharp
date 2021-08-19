@@ -46,5 +46,11 @@ namespace WeddingPlanner.Models
         // Navigation Prop: 1 User : Many Weddings?
         public List<Wedding> Wedding { get; set; }
         public List<Rsvp> Rsvps { get; set; } // 1 user can be invited to many weddings
+
+        // Methods
+        public string FullName()
+        {
+            return FirstName + " " + LastName;
+        }
     }
 }
