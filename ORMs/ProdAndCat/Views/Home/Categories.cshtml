@@ -1,0 +1,25 @@
+@model List<Category>
+
+<div class="text-center">
+    <h1><a asp-controller="Home" asp-action="Index">Products</a> | Categories</h1>
+
+    <hr>
+
+    <div class="row mt-5">
+        <div class="col-md">
+            @{
+                Category emptyCategory = new Category();
+            }
+            <partial name="_AddCategory" model="@emptyCategory"></partial>
+        </div>
+
+        <div class="col-md">
+            <h2>Existing Categories</h2>
+            @foreach (Category category in Model)
+            {
+                <a asp-controller="Home" asp-action="CategoryDetails" asp-route-categoryId= "@category.CategoryId">@category.Name</a><br>
+            }
+        </div>
+    </div>
+    
+</div>

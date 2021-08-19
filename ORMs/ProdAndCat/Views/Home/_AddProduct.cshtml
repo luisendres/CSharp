@@ -1,0 +1,21 @@
+@model Product
+
+<h3 class="text-center">New Product</h3>
+<hr />
+
+<form asp-controller="Home" asp-action="CreateProduct" method="POST">
+
+    <label asp-for="Name"></label>
+    <span asp-validation-for="Name" class="text-danger font-weight-bold"></span>
+    <input asp-for="Name" class="form-control" />
+
+    <label asp-for="Description"></label>
+    <span asp-validation-for="Description" class="text-danger font-weight-bold"></span>
+    <textarea asp-for="Description" class="form-control"></textarea>
+
+    <label asp-for="Price"></label>
+    <span asp-validation-for="Price" class="text-danger font-weight-bold"></span>
+    <input asp-for="Price" class="form-control" />
+
+    <button class="btn btn-outline-success">Create</button>
+</form>

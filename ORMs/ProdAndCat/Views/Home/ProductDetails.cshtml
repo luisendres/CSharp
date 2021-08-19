@@ -1,0 +1,30 @@
+@model Product
+
+<h1 class="text-center">@Model.Name</h1>
+
+<hr>
+
+<div>
+    <div>
+        <h3>Categories:</h3>
+
+        @foreach (Association association in Model.Associations)
+        {
+            <p>@association.Category.Name</p>
+        }
+    </div>
+
+    <div>
+        <h3>Add Categories:</h3>
+        @{
+            Association newAssociation = new Association()
+            {
+                ProductId = Model.ProductId
+            };
+        }
+        <partial name="_AddCatToProd" model="@newAssociation"></partial>
+        <hr>
+    </div>
+    
+</div>
+

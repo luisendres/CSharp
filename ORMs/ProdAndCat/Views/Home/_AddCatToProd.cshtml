@@ -1,0 +1,12 @@
+@model Association
+
+<form asp-controller="Home" asp-action="AddCatToProd" asp-route-tripId="@Model.ProductId" method="POST" class="w-100">
+
+    <select asp-for="CategoryId">
+        @foreach (Category category in ViewBag.CategoriesToAdd)
+        {
+            <option value="@category.CategoryId">@category.Name</option>
+        }
+    </select>
+    <button class="btn btn-sm btn-outline-success">Add Destination</button>
+</form>

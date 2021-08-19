@@ -1,0 +1,29 @@
+﻿@model List<Product>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Products | <a asp-controller="Home" asp-action="Categories">Categories</a></h1>
+
+    <hr>
+
+    <div class="row mt-5">
+        <div class="col-md">
+            @{
+                Product emptyProduct = new Product();
+            }
+            <partial name="_AddProduct" model="@emptyProduct"></partial>
+        </div>
+
+        <div class="col-md">
+            <h2>Existing Products</h2>
+            @foreach (Product product in Model)
+            {
+                <a asp-controller="Home" asp-action="ProductDetails" asp-route-productId="@product.ProductId">@product.Name</a><br>
+            }
+        </div>
+    </div>
+    
+</div>
