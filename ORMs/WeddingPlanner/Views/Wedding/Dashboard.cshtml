@@ -1,0 +1,24 @@
+@model List<Wedding>
+
+<h1 class="text-center">Welcome to the Wedding Planner</h1>
+
+<table class="table table-striped">
+    <tr>
+        <th>Wedding</th>
+        <th>Date</th>
+        <th>Guest</th>
+        <th>Action</th>
+    </tr>
+    @foreach (Wedding wedding in Model)
+    {
+        <tr>
+            <th>@wedding.Couple();</th>
+            <th>@wedding.Date</th>
+            <th>@wedding.Rsvps.Count</th>
+            <th>PlaceHolder</th>
+        </tr>
+    }
+    
+</table>
+
+<button class="btn btn-link">New Wedding</button>
